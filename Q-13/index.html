@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="root">
+          <h1>Vanilla DOM Example</h1>
+          <p id="dom-count">Dom Update : 0</p>
+          <button onclick="changeTitle()">Change Title</button>
+    </div>
+    
+<script>
+    let VanillaCount=0
+    function changeTitle(){
+        VanillaCount++
+        document.title='DOM Upadte :'+ VanillaCount
+        document.getElementById('dom-count').innerText='Dom Update :'+ VanillaCount
+
+    }
+   
+
+</script>
+</body>
+</html>
